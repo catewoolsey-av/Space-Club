@@ -200,7 +200,7 @@ const AdminDealInterests = ({ onRefresh }) => {
         .limit(1)
         .maybeSingle();
 
-      const clubName = settings?.club_name || "Deep Tech Venture Club";
+      const clubName = settings?.club_name || "Space Venture Club";
 
       const res = await fetch('/.netlify/functions/send-email', {
         method: 'POST',
